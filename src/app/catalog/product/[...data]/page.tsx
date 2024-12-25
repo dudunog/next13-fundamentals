@@ -8,7 +8,11 @@ interface ProductProps {
 
 // Server Components => A gente não usa JavaScript no lado do cliente
 // Client Components => O JavaScript é enviado ao navegador (cliente)
+
 // Hydration => Tornar um HTML cru em um HTML interativo (Isso ocorre em todo client component)
+
+// Streaming SSR => Ler/escrever dados de forma parcial + Server-side Rendering
+// Renderizar um componente pelo lado do servidor de forma parcial
 
 export default function Product({ params }: ProductProps) {
   const [productId, size, color] = params.data
